@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GL Tax Solutions | Preparación de Impuestos, Bookkeeping y Crédito en El Paso, TX</title>
-<meta name="description" content="Oficina de preparación de impuestos en El Paso, Texas. Declaraciones del año en curso y años anteriores, bookkeeping y reparación de crédito. Atención bilingüe, personal y organizada.">
+<title>GL Tax Solutions | Notario, Impuestos, Crédito, Préstamos y Contabilidad en El Paso, TX</title>
+<meta name="description" content="Todos tus servicios en un solo lugar en El Paso, TX y Ciudad Juárez: notario público, impuestos, reparación de crédito, oficial de préstamos, contabilidad, service bureau y clínica financiera.">
 <meta name="theme-color" content="#1c2340">
 <link rel="canonical" href="https://gltaxsolutions.com/">
 <meta property="og:type" content="website">
@@ -252,6 +252,41 @@ footer .abajo{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between
   .hero .cta .btn{width:100%}
   .acciones .btn.compacto{display:none}
 }
+
+/* ===== Negro y oro ===== */
+:root{--navy:#0c0b09;--navy-2:#080706;--gold:#d4af6a;--gold-d:#b8893a;--gold-l:#f0d9a2}
+html[data-tema="dark"]{--bg:#0a0908;--bg-2:#100e0b;--card:#16130e;--text:#f6f0e2;--muted:#b5ab96;--line:#2f2819}
+header{background:rgba(10,9,8,.9)}
+.hero{background:radial-gradient(120% 90% at 80% 0%,#2a2113 0%,#0c0b09 60%)}
+.hero::before{background:rgba(212,175,106,.38);animation:deriva 14s ease-in-out infinite alternate}
+.hero::after{background:rgba(184,137,58,.22);animation:deriva 18s ease-in-out infinite alternate-reverse}
+@keyframes deriva{to{transform:translate(70px,50px) scale(1.15)}}
+.hero h1{font-size:clamp(38px,6.4vw,74px)}
+.hero h1 em{font-style:italic;background:linear-gradient(100deg,#b8893a,#f6e3b0 45%,#b8893a 90%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:brillo 5s linear infinite}
+@keyframes brillo{to{background-position:-220% 0}}
+.banda{background:linear-gradient(135deg,#0c0b09,#241c0f)}
+.marq{overflow:hidden;background:#0c0b09;border-block:1px solid rgba(212,175,106,.35);padding:15px 0}
+.marq-t{display:flex;gap:46px;width:max-content;animation:corre 38s linear infinite}
+.marq span{font-family:Fraunces,serif;font-style:italic;font-size:19px;color:var(--gold-l);white-space:nowrap}
+.marq span::after{content:"◆";font-style:normal;font-size:9px;margin-left:46px;color:var(--gold-d)}
+@keyframes corre{to{transform:translateX(-50%)}}
+.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.svc{--mx:50%;--my:50%;position:relative;background:linear-gradient(160deg,#1b1710,#100e0a);border:1px solid rgba(212,175,106,.28);border-radius:22px;padding:30px 24px 26px;display:flex;flex-direction:column;overflow:hidden;transform-style:preserve-3d;transition:border-color .25s,box-shadow .25s}
+.svc::before{content:"";position:absolute;inset:0;background:radial-gradient(260px circle at var(--mx) var(--my),rgba(212,175,106,.22),transparent 70%);opacity:0;transition:opacity .25s;pointer-events:none}
+.svc:hover{border-color:var(--gold);box-shadow:0 20px 50px rgba(0,0,0,.45),0 0 0 1px rgba(212,175,106,.25)}
+.svc:hover::before{opacity:1}
+.svc-ic{width:68px;height:68px;border-radius:50%;display:grid;place-items:center;color:var(--gold-l);border:2px solid var(--gold);background:radial-gradient(circle at 30% 25%,#3a2e17,#0e0c08);box-shadow:0 0 0 5px rgba(212,175,106,.1),0 8px 22px rgba(0,0,0,.5);margin-bottom:20px;transition:transform .35s}
+.svc:hover .svc-ic{transform:translateY(-4px) rotate(-6deg)}
+.svc h3{color:#f6f0e2;font-size:20px;margin-bottom:10px}
+.svc p{color:#b5ab96;font-size:14.8px;margin-bottom:20px}
+.svc>a:not(.btn){margin-top:auto;align-self:flex-start;color:var(--gold-l);font-weight:700;font-size:14.5px;text-decoration:none;border-bottom:1.5px solid var(--gold-d);padding-bottom:2px}
+.svc>a:not(.btn)::after{content:" →"}
+.svc-cta{justify-content:center;background:linear-gradient(135deg,#d4af6a,#a8782f);border:none}
+.svc-cta h3{color:#1a1409}.svc-cta p{color:#3a2c12}
+.svc-cta .btn.oro{background:#0c0b09;color:var(--gold-l);box-shadow:none;margin-top:auto;align-self:flex-start}
+@media (max-width:1000px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.svc-grid{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.hero::before,.hero::after,.hero h1 em,.marq-t{animation:none}.svc{transform:none!important}}
 </style>
 </head>
 <body>
@@ -285,9 +320,9 @@ footer .abajo{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between
 <section class="hero" id="inicio">
   <div class="env">
     <div>
-      <span class="eyebrow" style="background:rgba(201,164,99,.2);color:#e0c48f" data-es="El Paso, Texas · Atención bilingüe" data-en="El Paso, Texas · Bilingual service">El Paso, Texas · Atención bilingüe</span>
-      <h1 data-es="Tus impuestos, en manos que <em>sí</em> te explican" data-en="Your taxes, handled by people who <em>actually</em> explain">Tus impuestos, en manos que <em>sí</em> te explican</h1>
-      <p class="lead" data-es="Preparación de impuestos, bookkeeping y reparación de crédito. Te decimos qué necesitamos, qué sigue y cómo avanzar, sin tecnicismos y sin sorpresas." data-en="Tax preparation, bookkeeping and credit repair. We tell you what we need, what comes next and how to move forward — no jargon, no surprises.">Preparación de impuestos, bookkeeping y reparación de crédito. Te decimos qué necesitamos, qué sigue y cómo avanzar, sin tecnicismos y sin sorpresas.</p>
+      <span class="eyebrow" style="background:rgba(201,164,99,.2);color:#e0c48f" data-es="El Paso, TX · Ciudad Juárez, Chih." data-en="El Paso, TX · Ciudad Juárez, Chih.">El Paso, TX · Ciudad Juárez, Chih.</span>
+      <h1 data-es="Todos tus <em>servicios</em> en un solo lugar" data-en="All your <em>services</em> in one place">Todos tus <em>servicios</em> en un solo lugar</h1>
+      <p class="lead" data-es="Notario, impuestos, crédito, préstamos, contabilidad y más. Te decimos qué necesitamos y cómo avanzar, sin tecnicismos y sin sorpresas." data-en="Notary, taxes, credit, loans, accounting and more. We tell you what we need and how to move forward — no jargon, no surprises.">Notario, impuestos, crédito, préstamos, contabilidad y más. Te decimos qué necesitamos y cómo avanzar, sin tecnicismos y sin sorpresas.</p>
       <div class="cta">
         <a class="btn wa" href="https://wa.me/19153432099?text=Hola%2C%20quiero%20una%20consulta%20con%20GL%20Tax%20Solutions" target="_blank" rel="noopener">
           <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1s-.8 1-.9 1.2c-.2.2-.3.2-.6.1-1.7-.9-2.9-1.6-4-3.6-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 1.9.8 2.6.9 3.5.8.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.4z"/><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
@@ -316,75 +351,19 @@ footer .abajo{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between
   </div>
 </section>
 
-<!-- ============ SERVICIOS ============ -->
-<section class="seccion" id="servicios">
-  <div class="env">
-    <div class="centro rev">
-      <span class="eyebrow" data-es="Servicios" data-en="Services">Servicios</span>
-      <h2 data-es="En qué te podemos ayudar" data-en="How we can help you">En qué te podemos ayudar</h2>
-      <p class="desc" data-es="Tres servicios, un mismo trato: claro, organizado y con seguimiento." data-en="Three services, one same standard: clear, organized and with follow-up.">Tres servicios, un mismo trato: claro, organizado y con seguimiento.</p>
-    </div>
-    <div class="grid g3">
-      <article class="card rev">
-        <div class="ilus"><svg viewBox="0 0 220 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="36" y="14" width="112" height="128" rx="10" fill="#fff" stroke="#1c2340" stroke-width="3"/>
-<path d="M56 42h72M56 60h72M56 78h48" stroke="#c9a463" stroke-width="5" stroke-linecap="round"/>
-<path d="M56 98h40" stroke="#1c2340" stroke-width="5" stroke-linecap="round" opacity=".35"/>
-<circle cx="150" cy="104" r="30" fill="#c9a463"/>
-<path d="m138 105 8 8 17-18" stroke="#1c2340" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-<circle cx="176" cy="36" r="15" fill="#1c2340"/><path d="M176 28v16M172 32h8M172 40h8" stroke="#c9a463" stroke-width="3" stroke-linecap="round"/>
-</svg></div>
-        <h3 data-es="Preparación de Impuestos" data-en="Tax Preparation">Preparación de Impuestos</h3>
-        <p data-es="Declaraciones del año en curso y de años anteriores, personales y de negocio propio." data-en="Current-year and prior-year returns, personal and self-employed.">Declaraciones del año en curso y de años anteriores, personales y de negocio propio.</p>
-        <ul>
-          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 12 5 5L19 7"/></svg><span data-es="Personas, familias y self-employed" data-en="Individuals, families and self-employed">Personas, familias y self-employed</span></li>
-          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 12 5 5L19 7"/></svg><span data-es="Créditos como EITC y Child Tax Credit" data-en="Credits such as EITC and Child Tax Credit">Créditos como EITC y Child Tax Credit</span></li>
-          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 12 5 5L19 7"/></svg><span data-es="Revisión de años sin presentar" data-en="Review of unfiled years">Revisión de años sin presentar</span></li>
-        </ul>
-        <a class="btn oro chico" target="_blank" rel="noopener" href="https://wa.me/19153432099?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Preparaci%C3%B3n%20de%20Impuestos" data-es="Consultar por WhatsApp" data-en="Ask via WhatsApp">Consultar por WhatsApp</a>
-      </article>
-      <article class="card rev">
-        <div class="ilus"><svg viewBox="0 0 220 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="26" y="26" width="168" height="104" rx="12" fill="#fff" stroke="#1c2340" stroke-width="3"/>
-<path d="M26 52h168" stroke="#1c2340" stroke-width="3"/>
-<circle cx="42" cy="39" r="4" fill="#c9a463"/><circle cx="56" cy="39" r="4" fill="#c9a463" opacity=".55"/>
-<rect x="48" y="86" width="20" height="30" rx="5" fill="#c9a463" opacity=".55"/>
-<rect x="80" y="72" width="20" height="44" rx="5" fill="#c9a463"/>
-<rect x="112" y="92" width="20" height="24" rx="5" fill="#1c2340" opacity=".3"/>
-<rect x="144" y="64" width="20" height="52" rx="5" fill="#1c2340"/>
-<path d="M50 78c18-14 38 2 56-14s36 2 54-12" stroke="#c9a463" stroke-width="3.4" stroke-linecap="round" stroke-dasharray="7 7"/>
-</svg></div>
-        <h3 data-es="Bookkeeping" data-en="Bookkeeping">Bookkeeping</h3>
-        <p data-es="Contabilidad y organización financiera para mantener tu negocio en orden todo el año." data-en="Bookkeeping and financial organization to keep your business in order all year.">Contabilidad y organización financiera para mantener tu negocio en orden todo el año.</p>
-        <ul>
-          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 12 5 5L19 7"/></svg><span data-es="Registro de ingresos y gastos" data-en="Income and expense tracking">Registro de ingresos y gastos</span></li>
-          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 12 5 5L19 7"/></svg><span data-es="Organización de recibos y facturas" data-en="Receipt and invoice organization">Organización de recibos y facturas</span></li>
-          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 12 5 5L19 7"/></svg><span data-es="Listo para la temporada de impuestos" data-en="Ready for tax season">Listo para la temporada de impuestos</span></li>
-        </ul>
-        <a class="btn oro chico" target="_blank" rel="noopener" href="https://wa.me/19153432099?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Bookkeeping" data-es="Consultar por WhatsApp" data-en="Ask via WhatsApp">Consultar por WhatsApp</a>
-      </article>
-      <article class="card rev">
-        <div class="ilus"><svg viewBox="0 0 220 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M40 112a70 70 0 0 1 140 0" stroke="#1c2340" stroke-width="12" stroke-linecap="round" opacity=".18"/>
-<path d="M40 112a70 70 0 0 1 36-61" stroke="#b3261e" stroke-width="12" stroke-linecap="round"/>
-<path d="M82 47a70 70 0 0 1 56 3" stroke="#c9a463" stroke-width="12" stroke-linecap="round"/>
-<path d="M146 54a70 70 0 0 1 34 58" stroke="#2e7d32" stroke-width="12" stroke-linecap="round"/>
-<circle cx="110" cy="112" r="10" fill="#1c2340"/>
-<path d="m110 112 38-34" stroke="#1c2340" stroke-width="7" stroke-linecap="round"/>
-<rect x="66" y="124" width="88" height="16" rx="8" fill="#c9a463" opacity=".35"/>
-</svg></div>
-        <h3 data-es="Reparación de Crédito" data-en="Credit Repair">Reparación de Crédito</h3>
-        <p data-es="Orientación para entender tu reporte, ordenar tus cuentas y avanzar hacia tus metas." data-en="Guidance to understand your report, organize your accounts and move toward your goals.">Orientación para entender tu reporte, ordenar tus cuentas y avanzar hacia tus metas.</p>
-        <ul>
-          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 12 5 5L19 7"/></svg><span data-es="Revisión de tu reporte de crédito" data-en="Credit report review">Revisión de tu reporte de crédito</span></li>
-          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 12 5 5L19 7"/></svg><span data-es="Plan de pasos realistas" data-en="A plan with realistic steps">Plan de pasos realistas</span></li>
-          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 12 5 5L19 7"/></svg><span data-es="Acompañamiento en el proceso" data-en="Support through the process">Acompañamiento en el proceso</span></li>
-        </ul>
-        <a class="btn oro chico" target="_blank" rel="noopener" href="https://wa.me/19153432099?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Reparaci%C3%B3n%20de%20Cr%C3%A9dito" data-es="Consultar por WhatsApp" data-en="Ask via WhatsApp">Consultar por WhatsApp</a>
-      </article>
-    </div>
-  </div>
-</section>
+<div class="marq" aria-hidden="true"><div class="marq-t"><span>Notario Público</span><span>Impuestos</span><span>Reparación de Crédito</span><span>Oficial de Préstamos</span><span>Contabilidad y Finanzas</span><span>Service Bureau</span><span>Clínica Financiera</span><span>Notario Público</span><span>Impuestos</span><span>Reparación de Crédito</span><span>Oficial de Préstamos</span><span>Contabilidad y Finanzas</span><span>Service Bureau</span><span>Clínica Financiera</span></div></div>
+<section class="seccion" id="servicios"><div class="env">
+<div class="centro rev"><span class="eyebrow" data-es="Servicios" data-en="Services">Servicios</span>
+<h2 data-es="Todos tus servicios en un solo lugar" data-en="All your services in one place">Todos tus servicios en un solo lugar</h2>
+<p class="desc" data-es="Personas · Finanzas · Oportunidades. Tu aliado financiero para un futuro más grande." data-en="People · Finance · Opportunities. Your financial ally for a bigger future.">Personas · Finanzas · Oportunidades. Tu aliado financiero para un futuro más grande.</p></div>
+<div class="svc-grid"><article class="svc rev"><span class="svc-ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3h8v6a4 4 0 0 1-8 0z"/><path d="M5 21h14M7 16h10v5H7z"/></svg></span><h3 data-es="Notario Público" data-en="Notary Public">Notario Público</h3><p data-es="Documentos oficiales de manera rápida y segura." data-en="Official documents, fast and secure.">Documentos oficiales de manera rápida y segura.</p><a href="https://wa.me/19153432099?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Notario%20P%C3%BAblico" target="_blank" rel="noopener" data-es="Consultar" data-en="Ask us">Consultar</a></article>
+<article class="svc rev"><span class="svc-ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h8l4 4v14H7z"/><path d="M15 3v4h4M10 12h6M10 16h6"/></svg></span><h3 data-es="Impuestos" data-en="Taxes">Impuestos</h3><p data-es="Personales y de negocios, del año en curso y años anteriores." data-en="Personal and business, current and prior years.">Personales y de negocios, del año en curso y años anteriores.</p><a href="https://wa.me/19153432099?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Impuestos" target="_blank" rel="noopener" data-es="Consultar" data-en="Ask us">Consultar</a></article>
+<article class="svc rev"><span class="svc-ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17a8 8 0 0 1 16 0"/><path d="m12 17 4-5"/><circle cx="12" cy="17" r="1.2"/></svg></span><h3 data-es="Reparación de Crédito" data-en="Credit Repair">Reparación de Crédito</h3><p data-es="Mejora tu historial y alcanza tus metas." data-en="Improve your history and reach your goals.">Mejora tu historial y alcanza tus metas.</p><a href="https://wa.me/19153432099?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Reparaci%C3%B3n%20de%20Cr%C3%A9dito" target="_blank" rel="noopener" data-es="Consultar" data-en="Ask us">Consultar</a></article>
+<article class="svc rev"><span class="svc-ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 9-8 9 8"/><path d="M5 10v10h14V10M10 20v-5h4v5"/></svg></span><h3 data-es="Oficial de Préstamos" data-en="Loan Officer">Oficial de Préstamos</h3><p data-es="Compra, refinancia e inversión en propiedades." data-en="Buy, refinance and invest in property.">Compra, refinancia e inversión en propiedades.</p><a href="https://wa.me/19153432099?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Oficial%20de%20Pr%C3%A9stamos" target="_blank" rel="noopener" data-es="Consultar" data-en="Ask us">Consultar</a></article>
+<article class="svc rev"><span class="svc-ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 12h2M12 12h2M8 16h2M12 16h2"/></svg></span><h3 data-es="Contabilidad y Finanzas" data-en="Accounting & Finance">Contabilidad y Finanzas</h3><p data-es="Organiza, controla y haz crecer tu negocio." data-en="Organize, control and grow your business.">Organiza, controla y haz crecer tu negocio.</p><a href="https://wa.me/19153432099?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Contabilidad%20y%20Finanzas" target="_blank" rel="noopener" data-es="Consultar" data-en="Ask us">Consultar</a></article>
+<article class="svc rev"><span class="svc-ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></span><h3 data-es="Service Bureau" data-en="Service Bureau">Service Bureau</h3><p data-es="Software profesional y soporte para preparadores de impuestos." data-en="Professional software and support for tax preparers.">Software profesional y soporte para preparadores de impuestos.</p><a href="https://wa.me/19153432099?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Service%20Bureau" target="_blank" rel="noopener" data-es="Consultar" data-en="Ask us">Consultar</a></article>
+<article class="svc rev"><span class="svc-ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M17 14c2.5 0 4 2 4 5"/></svg></span><h3 data-es="Clínica Financiera" data-en="Financial Clinic">Clínica Financiera</h3><p data-es="Diagnóstico, planeación y estrategias para un futuro más sólido." data-en="Diagnosis, planning and strategies for a stronger future.">Diagnóstico, planeación y estrategias para un futuro más sólido.</p><a href="https://wa.me/19153432099?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Cl%C3%ADnica%20Financiera" target="_blank" rel="noopener" data-es="Consultar" data-en="Ask us">Consultar</a></article>
+<article class="svc svc-cta rev"><h3 data-es="¿No sabes por dónde empezar?" data-en="Not sure where to start?">¿No sabes por dónde empezar?</h3><p data-es="Cuéntanos tu meta y te decimos qué servicio te conviene." data-en="Tell us your goal and we will point you to the right service.">Cuéntanos tu meta y te decimos qué servicio te conviene.</p><a class="btn oro chico" href="https://wa.me/19153432099?text=Hola%2C%20quiero%20una%20consulta" target="_blank" rel="noopener" data-es="Contáctanos" data-en="Contact us">Contáctanos</a></article></div></div></section>
 
 <!-- ============ CIFRAS ============ -->
 <section class="banda">
@@ -428,7 +407,7 @@ footer .abajo{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between
       <div class="visita">
         <h3 data-es="Cómo llegar" data-en="How to find us">Cómo llegar</h3>
         <ul>
-          <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span>3590 N Zaragoza Road, Ste B103, Unit #127<br>El Paso, TX 79938</span></li>
+          <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span>3590 N Zaragoza Road, Ste B103, Unit #127<br>El Paso, TX 79938 · Ciudad Juárez, Chih.</span></li>
           <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span data-es="Atención con cita previa. Escríbenos y coordinamos el horario que te sirva." data-en="By appointment. Message us and we will arrange a time that works for you.">Atención con cita previa. Escríbenos y coordinamos el horario que te sirva.</span></li>
           <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h10"/></svg><span data-es="Si prefieres no venir, todo el proceso se puede hacer desde tu celular." data-en="If you prefer not to come, the whole process can be done from your phone.">Si prefieres no venir, todo el proceso se puede hacer desde tu celular.</span></li>
         </ul>
@@ -507,9 +486,7 @@ footer .abajo{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between
         <div class="campo">
           <label for="f_servicio" data-es="Servicio de interés" data-en="Service of interest">Servicio de interés</label>
           <select id="f_servicio">
-            <option data-es="Preparación de Impuestos" data-en="Tax Preparation">Preparación de Impuestos</option>
-            <option data-es="Bookkeeping" data-en="Bookkeeping">Bookkeeping</option>
-            <option data-es="Reparación de Crédito" data-en="Credit Repair">Reparación de Crédito</option>
+            <option data-es="Notario Público" data-en="Notary Public">Notario Público</option><option data-es="Impuestos" data-en="Taxes">Impuestos</option><option data-es="Reparación de Crédito" data-en="Credit Repair">Reparación de Crédito</option><option data-es="Oficial de Préstamos" data-en="Loan Officer">Oficial de Préstamos</option><option data-es="Contabilidad y Finanzas" data-en="Accounting & Finance">Contabilidad y Finanzas</option><option data-es="Service Bureau" data-en="Service Bureau">Service Bureau</option><option data-es="Clínica Financiera" data-en="Financial Clinic">Clínica Financiera</option>
             <option data-es="Otra consulta" data-en="Other question">Otra consulta</option>
           </select>
         </div>
@@ -561,9 +538,7 @@ footer .abajo{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between
       </div>
       <div>
         <h4 data-es="Servicios" data-en="Services">Servicios</h4>
-        <a href="#servicios" data-es="Preparación de Impuestos" data-en="Tax Preparation">Preparación de Impuestos</a>
-        <a href="#servicios" data-es="Bookkeeping" data-en="Bookkeeping">Bookkeeping</a>
-        <a href="#servicios" data-es="Reparación de Crédito" data-en="Credit Repair">Reparación de Crédito</a>
+        <a href="#servicios" data-es="Notario Público" data-en="Notary Public">Notario Público</a><a href="#servicios" data-es="Impuestos" data-en="Taxes">Impuestos</a><a href="#servicios" data-es="Reparación de Crédito" data-en="Credit Repair">Reparación de Crédito</a><a href="#servicios" data-es="Oficial de Préstamos" data-en="Loan Officer">Oficial de Préstamos</a><a href="#servicios" data-es="Contabilidad y Finanzas" data-en="Accounting & Finance">Contabilidad y Finanzas</a><a href="#servicios" data-es="Service Bureau" data-en="Service Bureau">Service Bureau</a><a href="#servicios" data-es="Clínica Financiera" data-en="Financial Clinic">Clínica Financiera</a>
       </div>
       <div>
         <h4 data-es="Información" data-en="Information">Información</h4>
@@ -672,12 +647,12 @@ document.addEventListener('keydown', e=>{ if(e.key==='Escape'){ ['mPriv','mTerm'
 
 // ---------- Inicio ----------
 (function(){
-  let lang='es', tema='light';
+  let lang='es', tema='dark';
   try{
     const guardado = localStorage.getItem('gl_idioma');
     const navegador = (navigator.language || 'es').slice(0,2).toLowerCase();
     lang = guardado || (navegador === 'en' ? 'en' : 'es');
-    tema = localStorage.getItem('gl_tema') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    tema = localStorage.getItem('gl_tema') || 'dark';
   }catch(e){}
   aplicarTema(tema);
   if(lang==='en') setIdioma('en');
@@ -712,6 +687,19 @@ document.addEventListener('keydown', e=>{ if(e.key==='Escape'){ ['mPriv','mTerm'
     entradas.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('ver'); obs.unobserve(en.target); }});
   },{threshold:.12});
   document.querySelectorAll('.rev').forEach((el,i)=>{ el.style.transitionDelay=(i%3)*90+'ms'; obs.observe(el); });
+})();
+</script>
+<script>
+(function(){
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  document.querySelectorAll('.svc').forEach(function(c){
+    c.addEventListener('pointermove',function(e){
+      var r=c.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;
+      c.style.setProperty('--mx',x+'px');c.style.setProperty('--my',y+'px');
+      if(e.pointerType==='mouse')c.style.transform='perspective(800px) rotateX('+((.5-y/r.height)*7)+'deg) rotateY('+((x/r.width-.5)*7)+'deg) translateY(-4px)';
+    });
+    c.addEventListener('pointerleave',function(){c.style.transform=''});
+  });
 })();
 </script>
 </body>
